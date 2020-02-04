@@ -20,7 +20,7 @@ export const TypeScale = ({ reverse = true, ...props }) => {
         alignItems: 'baseline',
       }}
     >
-      {fontSizes.map((n, i) => {
+      {Object.values(fontSizes).map((n, i) => {
         const key = reverse ? fontSizes.length - 1 - i : i
         return (
           <TypeStyle
